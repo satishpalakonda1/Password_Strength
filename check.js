@@ -62,7 +62,7 @@ function validateForm() {
     let pass1 = document.querySelector(".password").value;
     let pass2 = document.querySelector(".password2").value;
 
-    if (pass1 !== pass2 || sub==false) {
+    if (pass1 !== pass2 || sub===false) {
         alert("Passwords do not match. Please correct the errors before submitting.");
         return false; 
     }

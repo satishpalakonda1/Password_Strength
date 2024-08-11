@@ -42,14 +42,18 @@ function checkEqual() {
     let pass2 = document.querySelector(".password2").value;
     var display = document.querySelector(".js-display-same");
 
+   
+    display.className = 'js-display-same'; 
+
     if (pass1 === pass2) {
         display.innerHTML = "Password Matched";
-        display.className = 'js-display-same match';
+        display.classList.add('password-match');
     } else {
-        display.innerHTML = "Password Mis Match";
-        display.className = 'js-display-same mismatch';
+        display.innerHTML = "Password Mismatch";
+        display.classList.add('password-mismatch');
     }
 }
+
 
 function validateForm() {
    

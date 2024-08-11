@@ -75,9 +75,11 @@ button:hover {
 {
     color: green;
 }
-.password-match{
+.password-match {
     color: green;
 }
-.password-missmatch{
+
+
+.password-mismatch {
     color: red;
 }
